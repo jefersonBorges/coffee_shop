@@ -1,0 +1,51 @@
+/****************
+*   ANIMATIONS  *
+****************/
+
+@keyframes image-scroll-left{
+    0%,15%{
+        left: 0;
+    }
+    35%,65%{
+        left: calc(-1*var(--width-image-slide));
+    }
+    85%,100%{
+        left: calc(-2*var(--width-image-slide));
+    }
+}
+
+@keyframes information-scroll-left{
+    0%,15%{
+        left: 0;
+    }
+    35%,65%{
+        left: calc(-1*var(--width-information-slide));
+    }
+    85%,100%{
+        left: calc(-2*var(--width-information-slide));
+    }
+}
+
+@keyframes information-scroll-left-mobile{
+    0%,15%{
+        left: 0;
+    }
+    35%,65%{
+        left: calc(-1*var(--width-information-slide-mobile));
+    }
+    85%,100%{
+        left: calc(-2*var(--width-information-slide-mobile));
+    }
+}
+
+@keyframes information-scroll-left-mobile-smaller{
+    0%,15%{
+        left: 0;
+    }
+    35%,65%{
+        left: calc(-1*var(--width-information-slide-mobile-smaller));
+    }
+    85%,100%{
+        left: calc(-2*var(--width-information-slide-mobile-smaller));
+    }
+}

@@ -1,0 +1,93 @@
+/************
+*   COMMON  *
+************/
+
+:root{
+    --font-primary: 'League Gothic', sans-serif;
+    --font-secondary: 'Poiret One', cursive;
+
+    --font-size-primary: 25px;
+    --font-size-secondary: 20px;
+    --font-size-tertiary: 15px;
+
+    --letter-spacing-primary: 3px;
+    --letter-spacing-secondary: 2px;
+
+    --line-height-secondary: 1.5;
+    --line-height-primary: 1.8;
+
+    --text-transform-primary: uppercase;
+    --text-transform-secondary: capitalize;
+
+    --font-weight-primary: bolder;
+    --font-weight-secondary: bold;
+
+    --color-light-primary: #c5b79b;
+    --color-dark-primary: #281e17;
+
+    --color-light-secondary: #af9e7f;
+    --color-dark-secondary: #584431;
+
+    --color-medium-primary: #8b7557;
+
+    --color-dark-primary-transparency-primary:#281e17cc; 
+    --color-light-primary-transparency-primary:#c5b79bcc;
+    --color-light-primary-transparency-secondary:#c5b79b99;
+
+    --max-width: 1200px;
+
+    --height-header:18vh;
+    --height-header-mobile: 50px;
+
+    --width-information-slide: 360px;
+    --width-information-slide-mobile: 400px;
+    --width-information-slide-mobile-smaller: 100%;
+    --width-image-slide: 700px;
+
+    --height-slide: 460px;
+    --height-slide-mobile: 460px;
+
+    --animation-duration-home: 20000ms;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: calc(var(--height-header) + 40px);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 800px){
+    section{
+        padding: unset;
+        padding-top: var(--height-header-mobile);
+    }
+}
+.container{
+    height: 100%;
+    width: 100%;
+    max-width: var(--max-width);
+}
+@media (max-width: 800px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: unset;
+        width: 100%;
+    }
+}

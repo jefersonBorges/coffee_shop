@@ -1,0 +1,101 @@
+/************
+*   HEADER  *
+************/
+.header{
+    width: 100%;
+    height: var(--height-header);
+    position: fixed;
+    z-index: 1;
+    background-color: var(--color-light-primary-transparency-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 6px 0px var(--color-dark-primary);
+}
+@media (max-width:800px) {
+    .header{
+        height: var(--height-header-mobile);
+    }
+}
+.navMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobileShortcuts{
+    display: none;
+}
+@media (max-width:800px) {
+    .mobileShortcuts{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.item, .item a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.item a{
+    text-transform: var(--text-transform-primary);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-primary);
+    letter-spacing: var(--letter-spacing-primary);
+    line-height: var(--line-height-primary);
+    font-weight: var(--font-weight-primary);
+    color: var(--color-dark-primary);
+    border-bottom: 5px solid rgb(0 0 0 / 1%);
+}
+.item a:hover{
+    border-bottom: 5px solid var(--color-dark-primary);
+}
+@media (max-width: 800px){
+    .item a,
+    .item a:hover{
+        border: unset;
+    }
+}
+.mobileIcons{
+    height: 30px;
+}
+.pageMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 800px) {
+    .pageMenu{
+        flex-direction: column;
+        justify-content:center;
+        align-items: flex-start;
+        z-index: 0;
+        position: absolute;
+        bottom: -250px;
+        right: -100%;
+        width: 100%;
+        height: 250px;
+        background-color: var(--color-light-primary-transparency-primary);
+        transition: 500ms ease-in-out;
+    }
+    .pageMenu.active{
+        right: 0;
+    }
+}
+.logo img{
+    height: 15vh;
+}
+@media (max-width: 800px) {
+    .logo{
+        display: none;
+    }
+}
